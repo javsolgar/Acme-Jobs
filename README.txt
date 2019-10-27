@@ -13,4 +13,3 @@ who have enroled the Design and Testing subject of the Software Engineering curr
 University of Sevilla.  This project provides a template our students can use to get their projects 
 up and running very quickly.
 
-Hola
