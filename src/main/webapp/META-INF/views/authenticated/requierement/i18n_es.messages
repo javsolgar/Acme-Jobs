@@ -1,0 +1,14 @@
+authenticated.requirement.list.label.title = Título
+authenticated.requirement.list.label.description = Descripción
+authenticated.requirement.list.label.reward = Recompensa
+authenticated.requirement.list.label.deadline = Fecha Límite
+authenticated.requirement.list.label.moment = Publicación
+authenticated.requirement.list.label.idRequest = ID
+
+authenticated.requirement.form.label.title = Título:
+authenticated.requirement.form.label.description = Descripción:
+authenticated.requirement.form.label.reward = Recompensa:
+authenticated.requirement.form.label.deadline = Fecha Límite:
+authenticated.requirement.form.label.moment = Publicación:
+authenticated.request.form.label.button.return = Volver
+authenticated.request.form.button.create = Crear
