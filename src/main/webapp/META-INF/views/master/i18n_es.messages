@@ -30,12 +30,21 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.announcement.list= Lista de anuncios
+master.menu.anonymous.announcement.form= Crear anuncio
+
+# master.menu.authenticated ########################################################
+master.menu.authenticated= Autentificado
+master.menu.authenticated.announcement.list= Lista de anuncios
+master.menu.authenticated.announcement.form= Crear anuncio
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcement.list= Lista de anuncios
+master.menu.administrator.announcement.form= Crear anuncio
 
 # master.menu.provider ########################################################
 
