@@ -16,10 +16,10 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.requirement.list.label.title" path="title" width="25%"/>
-	<acme:list-column code="authenticated.requierement.list.label.description" path="description" width="55%"/>	
-	<acme:list-column code="authenticated.requierement.list.label.reward" path="reward" width="5%"/>	
-	<acme:list-column code="authenticated.requierement.list.label.deadline" path="deadline" width="5%"/>	
-	<acme:list-column code="authenticated.requierement.list.label.moment" path="moment" width="5"/>	
-	<acme:list-column code="authenticated.requierement.list.label.idRequest" path="idRequest" width="5%"/>		
+	<acme:list-column code="authenticated.request.list.label.title" path="title" width="20%"/>
+	<acme:list-column code="authenticated.request.list.label.description" path="description" width="50%"/>	
+	<acme:list-column code="authenticated.request.list.label.reward" path="reward" width="5%"/>	
+	<acme:list-column code="authenticated.request.list.label.deadline" path="deadLine" width="5%"/>	
+	<acme:list-column code="authenticated.request.list.label.moment" path="moment" width="5"/>	
+	<acme:list-column code="authenticated.request.list.label.idRequest" path="idRequest" width="5%"/>		
 </acme:list>

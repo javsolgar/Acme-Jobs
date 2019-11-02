@@ -19,7 +19,10 @@ public class AuthenticatedRequestController extends AbstractController<Authentic
 	//	Internal  state 	---------------------------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedRequestListService listService;
+	private AuthenticatedRequestListService	listService;
+
+	@Autowired
+	private AuthenticatedRequestShowService	showService;
 
 
 	//	Constructors	-------------------------------------------------------------------------------
@@ -27,5 +30,6 @@ public class AuthenticatedRequestController extends AbstractController<Authentic
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }

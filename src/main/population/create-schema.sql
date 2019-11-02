@@ -79,6 +79,9 @@
 
     insert into `hibernate_sequence` values ( 1 );
 
+    alter table `request` 
+       add constraint UK_dm2m2u46kh331qjjo4jsbbwcb unique (`id_request`);
+
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
 

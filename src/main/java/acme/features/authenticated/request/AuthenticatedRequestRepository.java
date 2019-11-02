@@ -15,4 +15,7 @@ public interface AuthenticatedRequestRepository extends AbstractRepository {
 	@Query("select a from Request a")
 	Collection<Request> findManyAll();
 
+	@Query("select a from Request a where a.id=?1")
+	Request findOneById(Integer id);
+
 }
