@@ -37,6 +37,7 @@ master.menu.authenticated= Autentificado
 master.menu.authenticated.announcement.list= Lista de anuncios
 master.menu.authenticated.announcement.form= Crear anuncio
 master.menu.authenticated.requestList = Lista de peticiones
+master.menu.authenticated.challengeList = Lista de retos
 
 # master.menu.administrator ###################################################
 
