@@ -10,14 +10,13 @@
 
 # master.banner.welcome #######################################################
 
-master.banner.background = #FFE97F 
+master.banner.background = #FFFFFF 
 
 ﻿# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
-	Bienvenidos a Acme Stater!  Nunca antes ha sido tan sencillo desarrollar un \
-	proyecto y hacerlo funcionar.
+	¡Bienvenidos a Acme Jobs! 
 
 # master.menu #################################################################
 
@@ -30,12 +29,21 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
+master.menu.anonymous.announcement.list= Lista de anuncios
+master.menu.anonymous.announcement.form= Crear anuncio
+
+# master.menu.authenticated ########################################################
+master.menu.authenticated= Autentificado
+master.menu.authenticated.announcement.list= Lista de anuncios
+master.menu.authenticated.announcement.form= Crear anuncio
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcement.list= Lista de anuncios
+master.menu.administrator.announcement.form= Crear anuncio
 
 # master.menu.provider ########################################################
 
@@ -72,10 +80,10 @@ master.footer.label.spanish = Español
 
 master.company.title = La compañía
 master.company.text = \
-	Starter Project, Inc. es una compañía fictícia que proporciona un proyecto \
-	plantilla para los estudiantes de la asignatura Diseño y Pruebas, en el Grado \
+	Acme Jobs, Inc. es un proyecto de un grupo de estudiantes de \
+	la asignatura Diseño y Pruebas, en el Grado \
 	en Ingeniería del Software de la Universidad de Sevilla.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Jobs, Inc.
 master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
