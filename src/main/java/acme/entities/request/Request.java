@@ -3,6 +3,7 @@ package acme.entities.request;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -43,6 +44,7 @@ public class Request extends DomainEntity {
 	private Money				reward;
 
 	@NotBlank
+	@Column(unique = true)
 	//@Pattern("([R]{1})([A-Z]{})([-])([0-9]{5})")
 	private String				idRequest;
 
