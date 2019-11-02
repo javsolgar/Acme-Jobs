@@ -38,8 +38,10 @@ public class AuthenticatedChallengeShowService implements AbstractShowService<Au
 	@Override
 	public Challenge findOne(final Request<Challenge> request) {
 		assert request != null;
-		Integer id = request.getModel().getInteger("id");
-		Challenge result = this.repository.findOneById(id);
+		Challenge result;
+		Integer id;
+		id = request.getModel().getInteger("id");
+		result = this.repository.findOneById(id);
 		return result;
 	}
 
