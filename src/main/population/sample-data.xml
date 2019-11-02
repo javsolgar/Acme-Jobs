@@ -38,6 +38,14 @@
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+
+		<bean id="announcement04" class="acme.entities.announcements.Announcement">
+		<property name="title" value="Sample announcement 04"/>
+		<property name="moment" value="2019/11/01 00:00"/>
+		<property name="moreInfo" value="http://www.example.com"/>
+		<property name="text" value="This is the description of an announcement"/>
+	</bean>
+
 	
 	
 	<!-- Requests -->
@@ -77,4 +85,5 @@
 		<property name="idRequest" value="RABCD-00004"/>
 	</bean>
 	
+
 </beans>
