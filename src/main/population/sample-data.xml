@@ -14,8 +14,11 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
 	<import resource="conversion-service.xml" />
+	
+	
+	
+	<!-- Announcements -->
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
 		<property name="moment" value="2019/06/10 10:35"/>
@@ -35,10 +38,52 @@
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+
 		<bean id="announcement04" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 04"/>
 		<property name="moment" value="2019/11/01 00:00"/>
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is the description of an announcement"/>
 	</bean>
+
+	
+	
+	<!-- Requests -->
+	<bean id="request01" class="acme.entities.request.Request">
+		<property name="title" value="Sample request 01"/>
+		<property name="moment" value="2019/05/10 10:35"/>
+		<property name="deadLine" value="2019/07/10 12:35"/>
+		<property name="description" value="This is the description of a sample request"/>
+		<property name="reward" value="200€"/>
+		<property name="idRequest" value="RABCD-00001"/>
+	</bean>
+
+	<bean id="request02" class="acme.entities.request.Request">
+		<property name="title" value="Sample request 01"/>
+		<property name="moment" value="2018/05/10 10:35"/>
+		<property name="deadLine" value="2018/07/10 12:35"/>
+		<property name="description" value="This is the description of a the second request"/>
+		<property name="reward" value="2000€"/>
+		<property name="idRequest" value="RABCD-00002"/>
+	</bean>
+	
+	<bean id="request03" class="acme.entities.request.Request">
+		<property name="title" value="Sample request 01"/>
+		<property name="moment" value="2017/05/10 10:35"/>
+		<property name="deadLine" value="2017/07/10 12:35"/>
+		<property name="description" value="This is the description of the third request"/>
+		<property name="reward" value="1200€"/>
+		<property name="idRequest" value="RABCD-00003"/>
+	</bean>
+	
+	<bean id="request04" class="acme.entities.request.Request">
+		<property name="title" value="Sample request 04"/>
+		<property name="moment" value="2019/11/01 10:35"/>
+		<property name="deadLine" value="2020/07/10 12:35"/>
+		<property name="description" value="This is the description of the another request"/>
+		<property name="reward" value="20123€"/>
+		<property name="idRequest" value="RABCD-00004"/>
+	</bean>
+	
+
 </beans>

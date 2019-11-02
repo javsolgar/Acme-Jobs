@@ -48,6 +48,19 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `request` (
+       `id` integer not null,
+        `version` integer not null,
+        `dead_line` datetime(6),
+        `description` varchar(255),
+        `id_request` varchar(255),
+        `moment` datetime(6),
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
@@ -65,6 +78,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `request` 
+       add constraint UK_dm2m2u46kh331qjjo4jsbbwcb unique (`id_request`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
