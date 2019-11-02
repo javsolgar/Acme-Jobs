@@ -36,6 +36,7 @@ master.menu.anonymous.announcement.form= Create Announcement
 master.menu.authenticated= Authenticated
 master.menu.authenticated.announcement.list= Announcement's list
 master.menu.authenticated.announcement.form= Create Announcement
+master.menu.authenticated.requestList = Request list
 
 # master.menu.administrator ###################################################
 
