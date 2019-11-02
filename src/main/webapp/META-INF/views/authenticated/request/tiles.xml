@@ -22,8 +22,8 @@
 		<put-attribute name="body" type="template" value="../authenticated/request/list.jsp" />
 	</definition>
 	
-	<definition name="authenticated/announcement/form" extends="master">
-		<put-attribute name="body" type="template" value="../authenticated/announcement/form.jsp" />
+	<definition name="authenticated/request/form" extends="master">
+		<put-attribute name="body" type="template" value="../authenticated/request/form.jsp" />
 	</definition>
 
 </tiles-definitions>

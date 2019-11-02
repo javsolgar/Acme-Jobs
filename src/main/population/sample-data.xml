@@ -68,4 +68,13 @@
 		<property name="idRequest" value="RABCD-00003"/>
 	</bean>
 	
+	<bean id="request04" class="acme.entities.request.Request">
+		<property name="title" value="Sample request 04"/>
+		<property name="moment" value="2019/11/01 10:35"/>
+		<property name="deadLine" value="2020/07/10 12:35"/>
+		<property name="description" value="This is the description of the another request"/>
+		<property name="reward" value="20123€"/>
+		<property name="idRequest" value="RABCD-00003"/>
+	</bean>
+	
 </beans>
