@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.offers.Offers;
-import acme.entities.roles.Consumer;
 import acme.framework.components.Errors;
 import acme.framework.components.Model;
 import acme.framework.datatypes.Money;
+import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class AuthenticatedOffersCreateService implements AbstractCreateService<Consumer, Offers> {
+public class AuthenticatedOffersCreateService implements AbstractCreateService<Authenticated, Offers> {
 
 	//	Internal State ---------------------------------------------------------------------------------------
 	@Autowired
