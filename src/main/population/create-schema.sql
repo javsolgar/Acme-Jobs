@@ -1,4 +1,5 @@
-create table `administrator` (
+
+    create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -29,6 +30,18 @@ create table `administrator` (
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal_bronze` integer,
+        `goal_gold` integer,
+        `goal_silver` integer,
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `companyrecord` (
        `id` integer not null,
         `version` integer not null,
@@ -43,18 +56,6 @@ create table `administrator` (
         `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-    
-    create table `challenge` (
-       `id` integer not null,
-        `version` integer not null,
-        `deadline` datetime(6),
-        `description` varchar(255),
-        `goal_bronze` integer,
-        `goal_gold` integer,
-        `goal_silver` integer,
-        `title` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
 
     create table `consumer` (
        `id` integer not null,
@@ -65,7 +66,6 @@ create table `administrator` (
         primary key (`id`)
     ) engine=InnoDB;
 
-
     create table `investorsrecords` (
        `id` integer not null,
         `version` integer not null,
@@ -73,9 +73,8 @@ create table `administrator` (
         `number_stars` integer,
         `sector` varchar(255),
         `statement` varchar(255),
-         primary key (`id`)
+        primary key (`id`)
     ) engine=InnoDB;
-
 
     create table `offers` (
        `id` integer not null,
@@ -89,11 +88,9 @@ create table `administrator` (
         `major_range_currency` varchar(255),
         `moment` datetime(6),
         `title` varchar(255),
-         primary key (`id`)
+        primary key (`id`)
     ) engine=InnoDB;
 
-
-      
     create table `provider` (
        `id` integer not null,
         `version` integer not null,

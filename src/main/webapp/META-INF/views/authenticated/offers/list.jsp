@@ -21,6 +21,5 @@
 	<acme:list-column code="authenticated.offers.list.label.lower" path="lowerRange" width="5%"/>	
 	<acme:list-column code="authenticated.offers.list.label.major" path="majorRange" width="5%"/>		
 	<acme:list-column code="authenticated.offers.list.label.deadline" path="deadline" width="5%"/>	
-	<acme:list-column code="authenticated.offers.list.label.moment" path="moment" width="5%"/>	
-	<acme:list-column code="authenticated.offers.list.label.idOffers" path="idOffers" width="5%"/>		
+	<acme:list-column code="authenticated.offers.list.label.moment" path="moment" width="10%"/>	
 </acme:list>
