@@ -216,6 +216,29 @@
 		<property name="goalBronze" value="1050"/>
 	</bean>
 	
+	<!-- Configuration  Properties-->
+	<bean id="configuration" class="acme.entities.configuration.Configuration">
+		<property name="spamThreshold" value="1.00"/>
+		<property name="spamWords">
+			<list>
+				<value>sex</value>
+				<value>hard core</value>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>nigeria</value>
+				<value>you've won</value>
+				<value>million dollar</value>
+				<value>sexo</value>
+				<value>duro</value>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>nigeria</value>
+				<value>has ganado</value>
+				<value>millon de euros</value>
+			</list>
+		</property>
+	</bean>
+	
 	
 
 </beans>
