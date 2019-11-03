@@ -9,6 +9,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -44,7 +45,7 @@ public class Offers extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	//@Pattern("([R]{1})([A-Z]{})([-])([0-9]{5})")
+	@Pattern(regexp = "([O]{1})([A-Z]{4})([-])([0-9]{5})")
 	private String				idOffer;
 
 }

@@ -11,6 +11,7 @@ import javax.persistence.Transient;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -45,7 +46,7 @@ public class Request extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	//@Pattern("([R]{1})([A-Z]{})([-])([0-9]{5})")
+	@Pattern(regexp = "([R]{1})([A-Z]{4})([-])([0-9]{5})")
 	private String				idRequest;
 
 
