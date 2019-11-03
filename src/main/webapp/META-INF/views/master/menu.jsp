@@ -23,6 +23,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.announcement.list" action="/anonymous/announcement/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.investorsrecords.list" action="/anonymous/investorsrecords/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.companyrecord.list" action="/anonymous/companyrecord/list"/>
 		</acme:menu-option>
 		
@@ -30,6 +32,8 @@
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.requestList" action="/authenticated/request/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.investorsrecords.list" action="/authenticated/investorsrecords/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">

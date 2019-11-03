@@ -1,13 +1,19 @@
 
-package acme.entities.investors_records;
+package acme.entities.investorsrecords;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 import acme.framework.entities.DomainEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-public class Investors_records extends DomainEntity {
+@Getter
+@Setter
+public class Investorsrecords extends DomainEntity {
 	// Serialization Identify ------------------------------------------------------------------------------------------------
 
 	private static final long	serialVersionUID	= 1L;
@@ -23,15 +29,21 @@ public class Investors_records extends DomainEntity {
 	@NotBlank
 	private String				statement;
 
+	@Min(0)
+	@Max(5)
 	private Integer				numberStars;
 
 
 	// Derivated Atributes -------------------------------------------------------------
 
-	public String getStars() {
+	public String getNumberStars() {
 		String stars = "";
 		if (this.numberStars != null) {
 			switch (this.numberStars) {
+			case 0:
+				stars = "-";
+				break;
+
 			case 1:
 				stars = "★";
 				break;
