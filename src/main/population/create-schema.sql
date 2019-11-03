@@ -1,5 +1,4 @@
-
-    create table `administrator` (
+create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -30,6 +29,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `companyrecord` (
+       `id` integer not null,
+        `version` integer not null,
+        `ceo` varchar(255),
+        `description` varchar(255),
+        `email` varchar(255),
+        `incorporated` integer,
+        `name` varchar(255),
+        `phone` varchar(255),
+        `sector` varchar(255),
+        `stars` double precision,
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -51,6 +65,35 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
+    create table `investorsrecords` (
+       `id` integer not null,
+        `version` integer not null,
+        `name` varchar(255),
+        `number_stars` integer,
+        `sector` varchar(255),
+        `statement` varchar(255),
+         primary key (`id`)
+    ) engine=InnoDB;
+
+
+    create table `offers` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `id_offer` varchar(255),
+        `lower_range_amount` double precision,
+        `lower_range_currency` varchar(255),
+        `major_range_amount` double precision,
+        `major_range_currency` varchar(255),
+        `moment` datetime(6),
+        `title` varchar(255),
+         primary key (`id`)
+    ) engine=InnoDB;
+
+
+      
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -90,6 +133,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `offers` 
+       add constraint UK_705rmv7gevgntdq9bj6t4iyre unique (`id_offer`);
 
     alter table `request` 
        add constraint UK_dm2m2u46kh331qjjo4jsbbwcb unique (`id_request`);

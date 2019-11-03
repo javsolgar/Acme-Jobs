@@ -84,6 +84,107 @@
 		<property name="reward" value="20123€"/>
 		<property name="idRequest" value="RABCD-00004"/>
 	</bean>
+	<!-- Company record -->
+	
+	<bean id="companyrecord01" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Toshiba"/>
+		<property name="sector" value="Tech"/>
+		<property name="ceo" value="Leslie"/>
+		<property name="description" value="This is the description of a company"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="111222333"/>
+		<property name="email" value="example@example.com"/>
+		<property name="incorporated" value="INC"/>
+		<property name="stars" value="4.0"/>
+	</bean>
+	
+	<bean id="companyrecord02" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="BMW"/>
+		<property name="sector" value="Car"/>
+		<property name="ceo" value="Jhon Doe"/>
+		<property name="description" value="This is the description of another company"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="222333444"/>
+		<property name="email" value="example@example.com"/>
+		<property name="incorporated" value="LLC"/>
+		<property name="stars" value="3.5"/>
+	</bean>
+	<!--  
+	<bean id="companyrecord03" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Nintendo"/>
+		<property name="sector" value="VideoGames"/>
+		<property name="ceo" value="Marie"/>
+		<property name="description" value="This is the description of another company"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="222333444"/>
+		<property name="email" value="example@example.com"/>
+		<property name="incorporated" value="LLC"/>
+		<property name="stars" value="6.0"/>
+	</bean>
+	
+	<bean id="companyrecord04" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Xiaomi"/>
+		<property name="sector" value="Electronic"/>
+		<property name="ceo" value="Jaiver Solis"/>
+		<property name="description" value="This is the description of another company"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="222333444"/>
+		<property name="email" value="example@example.com"/>
+		<property name="incorporated" value="LLC"/>
+		<property name="stars" value="-1.0"/>
+	</bean>
+	-->
+		<bean id="investorsrecords01" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="Ricochili"/>
+		<property name="sector" value="Electronic"/>
+		<property name="statement" value="This is an example of a statement"/>
+		<property name="numberStars" value="3"/>
+	</bean>
+	
+	<bean id="investorsrecords02" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="Moneyzans"/>
+		<property name="sector" value="Industry"/>
+		<property name="statement" value="This is an other example of a statement"/>
+		<property name="numberStars" value="2"/>
+	</bean>
+	
+	<bean id="investorsrecords03" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="Evilcom"/>
+		<property name="sector" value="Building"/>
+		<property name="statement" value="This is a bad example of a statement"/>
+		<property name="numberStars" value="0"/>
+	</bean>
+	
+	<!-- Offers -->
+	<bean id="offer01" class="acme.entities.offers.Offers">
+		<property name="title" value="Sample offer 01"/>
+		<property name="moment" value="2019/05/10 10:35"/>
+		<property name="deadline" value="2019/07/10 12:35"/>
+		<property name="description" value="This is the description of a sample offer"/>
+		<property name="lowerRange" value="100€"/>
+		<property name="majorRange" value="200€"/>
+		<property name="idOffer" value="OABCD-00001"/>
+	</bean>
+	
+	<bean id="offer02" class="acme.entities.offers.Offers">
+		<property name="title" value="Sample offer 02"/>
+		<property name="moment" value="2019/05/10 10:35"/>
+		<property name="deadline" value="2019/07/10 12:35"/>
+		<property name="description" value="This is the description of the second sample offer"/>
+		<property name="lowerRange" value="200€"/>
+		<property name="majorRange" value="300€"/>
+		<property name="idOffer" value="OABCD-00002"/>
+	</bean>
+	
+	<bean id="offer03" class="acme.entities.offers.Offers">
+		<property name="title" value="Sample offer 03"/>
+		<property name="moment" value="2019/05/10 10:35"/>
+		<property name="deadline" value="2019/07/10 12:35"/>
+		<property name="description" value="This is the description of the third sample offer"/>
+		<property name="lowerRange" value="100€"/>
+		<property name="majorRange" value="200€"/>
+		<property name="idOffer" value="OABCD-00003"/>
+	</bean>
 	
 	<!-- Challenge -->
 	

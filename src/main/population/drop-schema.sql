@@ -1,5 +1,4 @@
-
-    alter table `administrator` 
+ alter table `administrator` 
        drop 
        foreign key FK_2a5vcjo3stlfcwadosjfq49l1;
 
@@ -27,9 +26,15 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `companyrecord`;
+    
     drop table if exists `challenge`;
 
     drop table if exists `consumer`;
+
+    drop table if exists `investorsrecords`;
+
+    drop table if exists `offers`;
 
     drop table if exists `provider`;
 

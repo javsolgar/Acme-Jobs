@@ -31,12 +31,16 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement.list= Lista de anuncios
 master.menu.anonymous.announcement.form= Crear anuncio
+master.menu.anonymous.investorsrecords.list= Lista de registros de inversionistas
+
 
 # master.menu.authenticated ########################################################
 master.menu.authenticated= Autentificado
 master.menu.authenticated.announcement.list= Lista de anuncios
 master.menu.authenticated.announcement.form= Crear anuncio
 master.menu.authenticated.requestList = Lista de peticiones
+master.menu.authenticated.investorsrecords.list= Lista de registros de inversionistas
+master.menu.authenticated.offersList = Lista de ofertas
 master.menu.authenticated.challengeList = Lista de retos
 
 # master.menu.administrator ###################################################
@@ -67,6 +71,7 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.anonymous.companyrecord.list = Compañías
 
 ﻿# master.footer ###############################################################
 
@@ -103,4 +108,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	
