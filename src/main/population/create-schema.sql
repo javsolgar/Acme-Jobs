@@ -50,9 +50,9 @@
         `email` varchar(255),
         `incorporated` integer,
         `name` varchar(255),
+        `number_stars` integer,
         `phone` varchar(255),
         `sector` varchar(255),
-        `stars` double precision,
         `website` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
