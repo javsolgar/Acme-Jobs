@@ -186,5 +186,35 @@
 		<property name="idOffer" value="OABCD-00003"/>
 	</bean>
 	
+	<!-- Challenge -->
+	
+	<bean id="challenge01" class="acme.entities.challenge.Challenge">
+		<property name="title" value="Sample challenge 01"/>
+		<property name="deadline" value="2020/07/10 12:35"/>
+		<property name="description" value="This is the description of the first challenge"/>
+		<property name="goalGold" value="10000"/>
+		<property name="goalSilver" value="5000"/>
+		<property name="goalBronze" value="1000"/>
+	</bean>
+	
+	<bean id="challenge02" class="acme.entities.challenge.Challenge">
+		<property name="title" value="Sample challenge 02"/>
+		<property name="deadline" value="2022/12/12 12:35"/>
+		<property name="description" value="This is the description of the second challenge"/>
+		<property name="goalGold" value="12222"/>
+		<property name="goalSilver" value="5222"/>
+		<property name="goalBronze" value="1222"/>
+	</bean>
+	
+	<bean id="challenge03" class="acme.entities.challenge.Challenge">
+		<property name="title" value="Sample challenge 03"/>
+		<property name="deadline" value="2024/04/14 12:35"/>
+		<property name="description" value="This is the description of the third challenge"/>
+		<property name="goalGold" value="144444"/>
+		<property name="goalSilver" value="3010"/>
+		<property name="goalBronze" value="1050"/>
+	</bean>
+	
+	
 
 </beans>

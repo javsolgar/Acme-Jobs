@@ -43,6 +43,7 @@ master.menu.authenticated.announcement.form= Create Announcement
 master.menu.authenticated.requestList = Request list
 master.menu.authenticated.investorsrecords.list= Investor Records' list
 master.menu.authenticated.offersList = Offers list
+master.menu.authenticated.challengeList = Challenge list
 
 # master.menu.administrator ###################################################
 

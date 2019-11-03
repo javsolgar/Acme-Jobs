@@ -41,6 +41,7 @@ master.menu.authenticated.announcement.form= Crear anuncio
 master.menu.authenticated.requestList = Lista de peticiones
 master.menu.authenticated.investorsrecords.list= Lista de registros de inversionistas
 master.menu.authenticated.offersList = Lista de ofertas
+master.menu.authenticated.challengeList = Lista de retos
 
 # master.menu.administrator ###################################################
 
@@ -107,4 +108,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	

@@ -1,5 +1,4 @@
-
-    create table `administrator` (
+create table `administrator` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
@@ -42,6 +41,18 @@
         `sector` varchar(255),
         `stars` double precision,
         `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+    
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `goal_bronze` integer,
+        `goal_gold` integer,
+        `goal_silver` integer,
+        `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
