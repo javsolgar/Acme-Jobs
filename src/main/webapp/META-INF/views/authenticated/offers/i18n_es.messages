@@ -1,7 +1,7 @@
 authenticated.offers.list.label.title = Título
 authenticated.offers.list.label.description = Descripción
-authenticated.offers.list.label.lower = Lower Range
-authenticated.offers.list.label.major = Major Range
+authenticated.offers.list.label.lower = Rango Menor
+authenticated.offers.list.label.major = Rango Mayor
 authenticated.offers.list.label.deadline = Fecha Límite
 authenticated.offers.list.label.moment = Publicación
 authenticated.offers.list.label.idOffers = ID
