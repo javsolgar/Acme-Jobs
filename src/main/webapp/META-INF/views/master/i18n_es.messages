@@ -40,6 +40,7 @@ master.menu.authenticated.announcement.list= Lista de anuncios
 master.menu.authenticated.announcement.form= Crear anuncio
 master.menu.authenticated.requestList = Lista de peticiones
 master.menu.authenticated.investorsrecords.list= Lista de registros de inversionistas
+master.menu.authenticated.offersList = Lista de ofertas
 
 # master.menu.administrator ###################################################
 

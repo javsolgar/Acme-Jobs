@@ -33,6 +33,8 @@
 
     drop table if exists `investorsrecords`;
 
+    drop table if exists `offers`;
+
     drop table if exists `provider`;
 
     drop table if exists `request`;

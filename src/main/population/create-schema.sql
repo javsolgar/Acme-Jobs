@@ -54,6 +54,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+
     create table `investorsrecords` (
        `id` integer not null,
         `version` integer not null,
@@ -61,9 +62,27 @@
         `number_stars` integer,
         `sector` varchar(255),
         `statement` varchar(255),
-        primary key (`id`)
+         primary key (`id`)
     ) engine=InnoDB;
 
+
+    create table `offers` (
+       `id` integer not null,
+        `version` integer not null,
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `id_offer` varchar(255),
+        `lower_range_amount` double precision,
+        `lower_range_currency` varchar(255),
+        `major_range_amount` double precision,
+        `major_range_currency` varchar(255),
+        `moment` datetime(6),
+        `title` varchar(255),
+         primary key (`id`)
+    ) engine=InnoDB;
+
+
+      
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -103,6 +122,9 @@
     ) engine=InnoDB;
 
     insert into `hibernate_sequence` values ( 1 );
+
+    alter table `offers` 
+       add constraint UK_705rmv7gevgntdq9bj6t4iyre unique (`id_offer`);
 
     alter table `request` 
        add constraint UK_dm2m2u46kh331qjjo4jsbbwcb unique (`id_request`);
