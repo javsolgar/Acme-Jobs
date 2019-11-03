@@ -95,7 +95,7 @@
 		<property name="phone" value="111222333"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="INC"/>
-		<property name="stars" value="4.0"/>
+		<property name="numberStars" value="4"/>
 	</bean>
 	
 	<bean id="companyrecord02" class="acme.entities.companyrecords.Companyrecord">
@@ -107,7 +107,7 @@
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="LLC"/>
-		<property name="stars" value="3.5"/>
+		<property name="numberStars" value="3"/>
 	</bean>
 	
 	<bean id="companyrecord03" class="acme.entities.companyrecords.Companyrecord">
@@ -119,7 +119,7 @@
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="LLC"/>
-		<property name="stars" value="5.0"/>
+		<property name="numberStars" value="5"/>
 	</bean>
 	
 	<bean id="companyrecord04" class="acme.entities.companyrecords.Companyrecord">
@@ -131,7 +131,7 @@
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="LLC"/>
-		<property name="stars" value="2.0"/>
+		<property name="numberStars" value="2"/>
 	</bean>
 	
 	<!-- Investors Records -->

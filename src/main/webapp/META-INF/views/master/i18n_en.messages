@@ -31,27 +31,27 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement.list= Announcements' list
 master.menu.anonymous.announcement.form= Create Announcement
-master.menu.anonymous.companyrecord.list= Company Record's list
+master.menu.anonymous.companyrecord.list= Company Records' list
 master.menu.anonymous.investorsrecords.list= Investor Records' list
 
 
 
 # master.menu.authenticated ########################################################
 master.menu.authenticated= Authenticated
-master.menu.authenticated.announcement.list= Announcement's list
+master.menu.authenticated.announcement.list= Announcements' list
 master.menu.authenticated.announcement.form= Create Announcement
-master.menu.authenticated.requestList = Request's list
-master.menu.authenticated.investorsrecords.list= Investor Records' list
-master.menu.authenticated.offersList = Offers' list
-master.menu.authenticated.challengeList = Challenge's list
-master.menu.authenticated.companyrecord.list= Company Record'list
+master.menu.authenticated.request.list = Request's list
+master.menu.authenticated.investorsrecord.list= Investor Records' list
+master.menu.authenticated.offer.list = Offers' list
+master.menu.authenticated.challenge.list = Challenges' list
+master.menu.authenticated.companyrecord.list= Company Records' list
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
-master.menu.administrator.announcement.list= Announcement's list
+master.menu.administrator.announcement.list= Announcements' list
 master.menu.administrator.announcement.form= Create Announcement
 
 # master.menu.provider ########################################################

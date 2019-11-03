@@ -12,7 +12,7 @@
 	<acme:form-textbox code="anonymous.companyrecord.form.label.phone" path="phone"/>
 	<acme:form-textbox code="anonymous.companyrecord.form.label.email" path="email"/>
 	<acme:form-textbox code="anonymous.companyrecord.form.label.incorporated" path="incorporated"/>
-	<acme:form-textbox code="anonymous.companyrecord.form.label.stars" path="stars"/>
+	<acme:form-textbox code="anonymous.companyrecord.form.label.stars" path="numberStars"/>
 	
 	<acme:form-return code="anonymous.companyrecord.form.label.button.return"/>
 </acme:form>
