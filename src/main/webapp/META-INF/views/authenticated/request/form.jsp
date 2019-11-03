@@ -8,7 +8,7 @@
 	<acme:form-textarea code="authenticated.request.form.label.description" path="description"/>
 	<acme:form-moment code="authenticated.request.form.label.moment" path="moment"/>
 	<acme:form-moment code="authenticated.request.form.label.deadline" path="deadLine"/>
-	<acme:form-textbox code="authenticated.request.form.label.reward" path="reward"/>
+	<acme:form-money code="authenticated.request.form.label.reward" path="reward"/>
 	<acme:form-textbox code="authenticated.request.form.label.idRequest" path="idRequest"/>
 	
 	
