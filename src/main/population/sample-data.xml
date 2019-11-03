@@ -84,7 +84,7 @@
 		<property name="reward" value="20123€"/>
 		<property name="idRequest" value="RABCD-00004"/>
 	</bean>
-	<!-- Company record -->
+	<!-- Company records -->
 	
 	<bean id="companyrecord01" class="acme.entities.companyrecords.Companyrecord">
 		<property name="name" value="Toshiba"/>
@@ -109,7 +109,7 @@
 		<property name="incorporated" value="LLC"/>
 		<property name="stars" value="3.5"/>
 	</bean>
-	<!--  
+	
 	<bean id="companyrecord03" class="acme.entities.companyrecords.Companyrecord">
 		<property name="name" value="Nintendo"/>
 		<property name="sector" value="VideoGames"/>
@@ -119,7 +119,7 @@
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="LLC"/>
-		<property name="stars" value="6.0"/>
+		<property name="stars" value="5.0"/>
 	</bean>
 	
 	<bean id="companyrecord04" class="acme.entities.companyrecords.Companyrecord">
@@ -131,9 +131,10 @@
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="LLC"/>
-		<property name="stars" value="-1.0"/>
+		<property name="stars" value="2.0"/>
 	</bean>
-	-->
+	
+	<!-- Investors Records -->
 		<bean id="investorsrecords01" class="acme.entities.investorsrecords.Investorsrecords">
 		<property name="name" value="Ricochili"/>
 		<property name="sector" value="Electronic"/>

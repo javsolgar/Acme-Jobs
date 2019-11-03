@@ -10,7 +10,6 @@
 	<acme:form-moment code="authenticated.offers.form.label.deadline" path="deadline"/>
 	<acme:form-textbox code="authenticated.offers.form.label.lower" path="lowerRange"/>
 	<acme:form-textbox code="authenticated.offers.form.label.major" path="majorRange"/>
-	<acme:form-textbox code="authenticated.offers.form.label.idOffer" path="idOffer"/>
 	
 	
 	<acme:form-return code="authenticated.offers.form.label.button.return"/>
