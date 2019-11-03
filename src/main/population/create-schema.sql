@@ -30,6 +30,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `slogan` varchar(255),
+        `url_picture` varchar(255),
+        `url_target` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
@@ -39,6 +48,16 @@
         `goal_gold` integer,
         `goal_silver` integer,
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `comercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `slogan` varchar(255),
+        `url_picture` varchar(255),
+        `url_target` varchar(255),
+        `credit_card` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -85,6 +104,16 @@
         `number_stars` integer,
         `sector` varchar(255),
         `statement` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `non_comercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `slogan` varchar(255),
+        `url_picture` varchar(255),
+        `url_target` varchar(255),
+        `jingle` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
