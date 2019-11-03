@@ -34,9 +34,11 @@
 			<acme:menu-suboption code="master.menu.authenticated.requestList" action="/authenticated/request/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.investorsrecords.list" action="/authenticated/investorsrecords/list"/>
-      <acme:menu-separator/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.companyrecord.list" action="/authenticated/companyrecord/list"/>
+      		<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.offersList" action="/authenticated/offers/list"/>
-      <acme:menu-separator/>
+     		 <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.challengeList" action="/authenticated/challenge/list"/>
 		</acme:menu-option>
 

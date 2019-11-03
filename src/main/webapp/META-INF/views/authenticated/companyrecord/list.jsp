@@ -16,10 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.offers.list.label.title" path="title" width="25%"/>
-	<acme:list-column code="authenticated.offers.list.label.description" path="description" width="50%"/>	
-	<acme:list-column code="authenticated.offers.list.label.lower" path="lowerRange" width="5%"/>	
-	<acme:list-column code="authenticated.offers.list.label.major" path="majorRange" width="5%"/>		
-	<acme:list-column code="authenticated.offers.list.label.deadline" path="deadline" width="5%"/>	
-	<acme:list-column code="authenticated.offers.list.label.moment" path="moment" width="10%"/>	
+	<acme:list-column code="authenticated.companyrecord.list.label.name" path="name" width="20%"/>
+	<acme:list-column code="authenticated.companyrecord.list.label.sector" path="sector" width="20%"/>
+	<acme:list-column code="authenticated.companyrecord.list.label.website" path="website" width="30%"/>
+	<acme:list-column code="authenticated.companyrecord.list.label.email" path="email" width="30%"/>		
 </acme:list>
