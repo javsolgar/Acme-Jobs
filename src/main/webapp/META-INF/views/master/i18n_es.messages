@@ -31,12 +31,15 @@ master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement.list= Lista de anuncios
 master.menu.anonymous.announcement.form= Crear anuncio
+master.menu.anonymous.investorsrecords.list= Lista de registros de inversionistas
+
 
 # master.menu.authenticated ########################################################
 master.menu.authenticated= Autentificado
 master.menu.authenticated.announcement.list= Lista de anuncios
 master.menu.authenticated.announcement.form= Crear anuncio
 master.menu.authenticated.requestList = Lista de peticiones
+master.menu.authenticated.investorsrecords.list= Lista de registros de inversionistas
 master.menu.authenticated.offersList = Lista de ofertas
 
 # master.menu.administrator ###################################################

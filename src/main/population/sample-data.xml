@@ -109,7 +109,7 @@
 		<property name="incorporated" value="LLC"/>
 		<property name="stars" value="3.5"/>
 	</bean>
-	
+	<!--  
 	<bean id="companyrecord03" class="acme.entities.companyrecords.Companyrecord">
 		<property name="name" value="Nintendo"/>
 		<property name="sector" value="VideoGames"/>
@@ -132,6 +132,27 @@
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="LLC"/>
 		<property name="stars" value="-1.0"/>
+	</bean>
+	-->
+		<bean id="investorsrecords01" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="Ricochili"/>
+		<property name="sector" value="Electronic"/>
+		<property name="statement" value="This is an example of a statement"/>
+		<property name="numberStars" value="3"/>
+	</bean>
+	
+	<bean id="investorsrecords02" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="Moneyzans"/>
+		<property name="sector" value="Industry"/>
+		<property name="statement" value="This is an other example of a statement"/>
+		<property name="numberStars" value="2"/>
+	</bean>
+	
+	<bean id="investorsrecords03" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="Evilcom"/>
+		<property name="sector" value="Building"/>
+		<property name="statement" value="This is a bad example of a statement"/>
+		<property name="numberStars" value="0"/>
 	</bean>
 	
 	<!-- Offers -->
