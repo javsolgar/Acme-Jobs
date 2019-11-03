@@ -31,7 +31,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement.list= Announcements' list
 master.menu.anonymous.announcement.form= Create Announcement
-master.menu.anonymous.companyrecord.list= Company Record
+master.menu.anonymous.companyrecord.list= Company Record's list
 master.menu.anonymous.investorsrecords.list= Investor Records' list
 
 
@@ -40,10 +40,11 @@ master.menu.anonymous.investorsrecords.list= Investor Records' list
 master.menu.authenticated= Authenticated
 master.menu.authenticated.announcement.list= Announcement's list
 master.menu.authenticated.announcement.form= Create Announcement
-master.menu.authenticated.requestList = Request list
+master.menu.authenticated.requestList = Request's list
 master.menu.authenticated.investorsrecords.list= Investor Records' list
-master.menu.authenticated.offersList = Offers list
-master.menu.authenticated.challengeList = Challenge list
+master.menu.authenticated.offersList = Offers' list
+master.menu.authenticated.challengeList = Challenge's list
+master.menu.authenticated.companyrecord.list= Company Record'list
 
 # master.menu.administrator ###################################################
 
