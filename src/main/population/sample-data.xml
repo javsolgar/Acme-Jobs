@@ -55,7 +55,7 @@
 		<property name="deadLine" value="2019/07/10 12:35"/>
 		<property name="description" value="This is the description of a sample request"/>
 		<property name="reward" value="200€"/>
-		<property name="idRequest" value="RABCD-00001"/>
+		<property name="ticker" value="RABCD-00001"/>
 	</bean>
 
 	<bean id="request02" class="acme.entities.request.Request">
@@ -64,7 +64,7 @@
 		<property name="deadLine" value="2018/07/10 12:35"/>
 		<property name="description" value="This is the description of a the second request"/>
 		<property name="reward" value="2000€"/>
-		<property name="idRequest" value="RABCD-00002"/>
+		<property name="ticker" value="RABCD-00002"/>
 	</bean>
 	
 	<bean id="request03" class="acme.entities.request.Request">
@@ -73,7 +73,7 @@
 		<property name="deadLine" value="2017/07/10 12:35"/>
 		<property name="description" value="This is the description of the third request"/>
 		<property name="reward" value="1200€"/>
-		<property name="idRequest" value="RABCD-00003"/>
+		<property name="ticker" value="RABCD-00003"/>
 	</bean>
 	
 	<bean id="request04" class="acme.entities.request.Request">
@@ -82,7 +82,7 @@
 		<property name="deadLine" value="2020/07/10 12:35"/>
 		<property name="description" value="This is the description of the another request"/>
 		<property name="reward" value="20123€"/>
-		<property name="idRequest" value="RABCD-00004"/>
+		<property name="ticker" value="RABCD-00004"/>
 	</bean>
 	<!-- Company records -->
 	
@@ -94,7 +94,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="111222333"/>
 		<property name="email" value="example@example.com"/>
-		<property name="incorporated" value="INC"/>
+		<property name="incorporated" value="true"/>
 		<property name="numberStars" value="4"/>
 	</bean>
 	
@@ -106,7 +106,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
-		<property name="incorporated" value="LLC"/>
+		<property name="incorporated" value="false"/>
 		<property name="numberStars" value="3"/>
 	</bean>
 	
@@ -118,7 +118,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
-		<property name="incorporated" value="LLC"/>
+		<property name="incorporated" value="true"/>
 		<property name="numberStars" value="5"/>
 	</bean>
 	
@@ -130,7 +130,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="222333444"/>
 		<property name="email" value="example@example.com"/>
-		<property name="incorporated" value="LLC"/>
+		<property name="incorporated" value="false"/>
 		<property name="numberStars" value="2"/>
 	</bean>
 	
@@ -164,7 +164,7 @@
 		<property name="description" value="This is the description of a sample offer"/>
 		<property name="lowerRange" value="100€"/>
 		<property name="majorRange" value="200€"/>
-		<property name="idOffer" value="OABCD-00001"/>
+		<property name="ticker" value="OABCD-00001"/>
 	</bean>
 	
 	<bean id="offer02" class="acme.entities.offers.Offers">
@@ -174,7 +174,7 @@
 		<property name="description" value="This is the description of the second sample offer"/>
 		<property name="lowerRange" value="200€"/>
 		<property name="majorRange" value="300€"/>
-		<property name="idOffer" value="OABCD-00002"/>
+		<property name="ticker" value="OABCD-00002"/>
 	</bean>
 	
 	<bean id="offer03" class="acme.entities.offers.Offers">
@@ -184,7 +184,7 @@
 		<property name="description" value="This is the description of the third sample offer"/>
 		<property name="lowerRange" value="100€"/>
 		<property name="majorRange" value="200€"/>
-		<property name="idOffer" value="OABCD-00003"/>
+		<property name="ticker" value="OABCD-00003"/>
 	</bean>
 	
 	<!-- Challenge -->
@@ -193,29 +193,37 @@
 		<property name="title" value="Sample challenge 01"/>
 		<property name="deadline" value="2020/07/10 12:35"/>
 		<property name="description" value="This is the description of the first challenge"/>
-		<property name="goalGold" value="10000"/>
-		<property name="goalSilver" value="5000"/>
-		<property name="goalBronze" value="1000"/>
+		<property name="goalGold" value="this is the description of the gold goal"/>
+		<property name="rewardGold" value="2000€"/>
+		<property name="goalSilver" value="this is the description of the silver goal"/>
+		<property name="rewardSilver" value="1000€"/>
+		<property name="goalBronze" value="this is the description of the bronze goal"/>
+		<property name="rewardBronze" value="500€"/>
 	</bean>
 	
 	<bean id="challenge02" class="acme.entities.challenge.Challenge">
 		<property name="title" value="Sample challenge 02"/>
 		<property name="deadline" value="2022/12/12 12:35"/>
 		<property name="description" value="This is the description of the second challenge"/>
-		<property name="goalGold" value="12222"/>
-		<property name="goalSilver" value="5222"/>
-		<property name="goalBronze" value="1222"/>
+		<property name="goalGold" value="this is the description of another gold goal"/>
+		<property name="rewardGold" value="2100€"/>
+		<property name="goalSilver" value="this is the description of another silver goal"/>
+		<property name="rewardSilver" value="1050€"/>
+		<property name="goalBronze" value="this is the description of another bronze goal"/>
+		<property name="rewardBronze" value="525€"/>
 	</bean>
 	
 	<bean id="challenge03" class="acme.entities.challenge.Challenge">
 		<property name="title" value="Sample challenge 03"/>
 		<property name="deadline" value="2024/04/14 12:35"/>
 		<property name="description" value="This is the description of the third challenge"/>
-		<property name="goalGold" value="144444"/>
-		<property name="goalSilver" value="3010"/>
-		<property name="goalBronze" value="1050"/>
+		<property name="goalGold" value="this is the description of the gold goal of the third challenge"/>
+		<property name="rewardGold" value="2500€"/>
+		<property name="goalSilver" value="this is the description of the silver goal of the third challenge"/>
+		<property name="rewardSilver" value="1250€"/>
+		<property name="goalBronze" value="this is the description of the bronze goal of the third challenge"/>
+		<property name="rewardBronze" value="625€"/>
 	</bean>
-	
 	
 	<!--Non Comercial Banner  -->
 	<bean id="nonComercialBanner01" class="acme.entities.banner.NonComercialBanner">

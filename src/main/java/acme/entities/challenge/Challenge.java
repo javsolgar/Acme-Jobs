@@ -6,9 +6,9 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,19 +28,24 @@ public class Challenge extends DomainEntity {
 	private String				title;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
 	private Date				deadline;
 
 	@NotBlank
 	private String				description;
 
-	//@NotBlank
-	private Integer				goalGold;
+	@NotBlank
+	private String				goalGold;
 
-	//@NotBlank
-	private Integer				goalSilver;
+	private Money				rewardGold;
 
-	//@NotBlank
-	private Integer				goalBronze;
+	@NotBlank
+	private String				goalSilver;
+
+	private Money				rewardSilver;
+
+	@NotBlank
+	private String				goalBronze;
+
+	private Money				rewardBronze;
 
 }

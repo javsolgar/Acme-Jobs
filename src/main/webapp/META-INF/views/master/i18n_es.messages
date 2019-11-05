@@ -42,7 +42,7 @@ master.menu.authenticated.request.list = Lista de peticiones
 master.menu.authenticated.investorsrecord.list= Lista de registros de inversionistas
 master.menu.authenticated.offer.list = Lista de ofertas
 master.menu.authenticated.challenge.list = Lista de retos
-master.menu.authenticated.companyrecord.list= Lista de records de compañías
+master.menu.authenticated.companyrecord.list= Lista de registros de compañías
 
 # master.menu.administrator ###################################################
 
