@@ -51,7 +51,7 @@ master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcement.list= Lista de anuncios
 master.menu.administrator.announcement.form= Crear anuncio
-master.menu.administrator.configuration.list= Parametros
+master.menu.administrator.configuration.list= Parámetros
 
 # master.menu.provider ########################################################
 
