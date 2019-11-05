@@ -9,7 +9,7 @@
 	<acme:form-moment code="authenticated.request.form.label.moment" path="moment"/>
 	<acme:form-moment code="authenticated.request.form.label.deadline" path="deadLine"/>
 	<acme:form-money code="authenticated.request.form.label.reward" path="reward"/>
-	<acme:form-textbox code="authenticated.request.form.label.idRequest" path="idRequest"/>
+	<acme:form-textbox code="authenticated.request.form.label.ticker" path="ticker"/>
 	
 	
 	<acme:form-return code="authenticated.request.form.label.button.return"/>

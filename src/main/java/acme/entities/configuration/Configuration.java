@@ -2,8 +2,10 @@
 package acme.entities.configuration;
 
 import javax.persistence.Entity;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;

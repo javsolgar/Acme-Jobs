@@ -30,16 +30,13 @@
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.announcement.list" action="/authenticated/announcement/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.request.list" action="/authenticated/request/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.offer.list" action="/authenticated/offers/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.investorsrecord.list" action="/authenticated/investorsrecords/list"/>
-			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.companyrecord.list" action="/authenticated/companyrecord/list"/>
-      		<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.offer.list" action="/authenticated/offers/list"/>
-     		 <acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.challenge.list" action="/authenticated/challenge/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
@@ -48,6 +45,8 @@
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.announcement.list" action="/administrator/announcement/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.configuration.list" action="/administrator/configuration/show" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">

@@ -2,11 +2,11 @@
 package acme.entities.companyrecords;
 
 import javax.persistence.Entity;
-import javax.persistence.Transient;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.URL;
 
@@ -45,29 +45,15 @@ public class Companyrecord extends DomainEntity {
 	@Email
 	private String				email;
 
-	private Incorporated		incorporated;
+	@NotNull
+	private Boolean				incorporated;
 
 	@Min(0)
 	@Max(5)
 	private Integer				numberStars;
 
-
 	//Deirvated
 
-	@Transient
-	public String getFullName() {
-
-		StringBuilder result;
-		result = new StringBuilder();
-		result.append(this.name);
-		result.append(", ");
-		if (this.incorporated == Incorporated.INC) {
-			result.append("Inc.");
-		} else {
-			result.append("LLC");
-		}
-		return result.toString();
-	}
 
 	public String getNumberStars() {
 		String stars = "";

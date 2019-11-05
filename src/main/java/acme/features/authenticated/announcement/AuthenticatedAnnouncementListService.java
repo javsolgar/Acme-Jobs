@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.announcement;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,7 +43,9 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 
 		Collection<Announcement> result;
 		result = this.repository.findManyAll();
-		return result;
+		Calendar calendar = Calendar.getInstance();
+		calendar.add(Calendar.MONTH, -1);
+		return result.stream().filter(x -> !(x.getMoment().compareTo(calendar.getTime()) < 0)).collect(Collectors.toList());
 	}
 
 }
