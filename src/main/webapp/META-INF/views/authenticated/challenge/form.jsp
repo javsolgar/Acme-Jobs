@@ -7,12 +7,12 @@
 	<acme:form-textbox code="authenticated.challenge.form.label.title" path="title"/>
 	<acme:form-textarea code="authenticated.challenge.form.label.description" path="description"/>
 	<acme:form-moment code="authenticated.challenge.form.label.deadline" path="deadline"/>
-	<acme:form-integer  code="authenticated.challenge.form.label.goalGold" path="goalGold"/>
-	<acme:form-textarea code="authenticated.challenge.form.label.goldDescription" path="goldDescription"/>	
-	<acme:form-integer code="authenticated.challenge.form.label.goalSilver" path="goalSilver"/>
-	<acme:form-textarea code="authenticated.challenge.form.label.silverDescription" path="silverDescription"/>	
-	<acme:form-integer  code="authenticated.challenge.form.label.goalBronze" path="goalBronze"/>	
-	<acme:form-textarea code="authenticated.challenge.form.label.bronzeDescription" path="bronzeDescription"/>	
+	<acme:form-textarea  code="authenticated.challenge.form.label.goalGold" path="goalGold"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardGold" path="rewardGold"/>	
+	<acme:form-textarea code="authenticated.challenge.form.label.goalSilver" path="goalSilver"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardSilver" path="rewardSilver"/>	
+	<acme:form-textarea  code="authenticated.challenge.form.label.goalBronze" path="goalBronze"/>	
+	<acme:form-money code="authenticated.challenge.form.label.rewardBronze" path="rewardBronze"/>	
 
 	
 	

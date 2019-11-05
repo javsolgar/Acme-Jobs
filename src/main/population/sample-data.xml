@@ -193,44 +193,39 @@
 		<property name="title" value="Sample challenge 01"/>
 		<property name="deadline" value="2020/07/10 12:35"/>
 		<property name="description" value="This is the description of the first challenge"/>
-		<property name="goalGold" value="10000"/>
-		<property name="goldDescription" value="This is another gold description"/>
-		<property name="goalSilver" value="5000"/>
-		<property name="silverDescription" value="This is another silver description"/>
-		<property name="goalBronze" value="1000"/>
-		<property name="bronzeDescription" value="This is another bronze description"/>
+		<property name="goalGold" value="this is the description of the gold goal"/>
+		<property name="rewardGold" value="2000€"/>
+		<property name="goalSilver" value="this is the description of the silver goal"/>
+		<property name="rewardSilver" value="1000€"/>
+		<property name="goalBronze" value="this is the description of the bronze goal"/>
+		<property name="rewardBronze" value="500€"/>
 	</bean>
 	
 	<bean id="challenge02" class="acme.entities.challenge.Challenge">
 		<property name="title" value="Sample challenge 02"/>
 		<property name="deadline" value="2022/12/12 12:35"/>
 		<property name="description" value="This is the description of the second challenge"/>
-		<property name="goalGold" value="12222"/>
-		<property name="goldDescription" value="This is a gold description"/>
-		<property name="goalSilver" value="5222"/>
-		<property name="silverDescription" value="This is a silver description"/>
-		<property name="goalBronze" value="1222"/>
-		<property name="bronzeDescription" value="This is a bronze description"/>
+		<property name="goalGold" value="this is the description of another gold goal"/>
+		<property name="rewardGold" value="2100€"/>
+		<property name="goalSilver" value="this is the description of another silver goal"/>
+		<property name="rewardSilver" value="1050€"/>
+		<property name="goalBronze" value="this is the description of another bronze goal"/>
+		<property name="rewardBronze" value="525€"/>
 	</bean>
 	
 	<bean id="challenge03" class="acme.entities.challenge.Challenge">
 		<property name="title" value="Sample challenge 03"/>
 		<property name="deadline" value="2024/04/14 12:35"/>
 		<property name="description" value="This is the description of the third challenge"/>
-		<property name="goalGold" value="144444"/>
-		<property name="goldDescription" value="Gold description"/>
-		<property name="goalSilver" value="3010"/>
-		<property name="silverDescription" value="Silver description"/>
-		<property name="goalBronze" value="1050"/>
-		<property name="bronzeDescription" value="Bronze description"/>
+		<property name="goalGold" value="this is the description of the gold goal of the third challenge"/>
+		<property name="rewardGold" value="2500€"/>
+		<property name="goalSilver" value="this is the description of the silver goal of the third challenge"/>
+		<property name="rewardSilver" value="1250€"/>
+		<property name="goalBronze" value="this is the description of the bronze goal of the third challenge"/>
+		<property name="rewardBronze" value="625€"/>
 	</bean>
 	
-	<!-- Configuration  Properties-->
-	<bean id="configuration" class="acme.entities.configuration.Configuration">
-		<property name="spamThreshold" value="1.00"/>
-		<property name="spamWords" value="sex, sexo, hardcore, duro, viagra, cialis, nigeria, you've won, has ganado, million dolar, millon de euros">
-		</property>
-	</bean>
+	
 	
 	<!--Non Comercial Banner  -->
 	<bean id="nonComercialBanner01" class="acme.entities.banner.NonComercialBanner">

@@ -8,6 +8,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -33,21 +34,18 @@ public class Challenge extends DomainEntity {
 	private String				description;
 
 	@NotBlank
-	private String				goldDescription;
+	private String				goalGold;
 
-	//@NotBlank
-	private Integer				goalGold;
-
-	@NotBlank
-	private String				silverDescription;
-
-	//@NotBlank
-	private Integer				goalSilver;
+	private Money				rewardGold;
 
 	@NotBlank
-	private String				bronzeDescription;
+	private String				goalSilver;
 
-	//@NotBlank
-	private Integer				goalBronze;
+	private Money				rewardSilver;
+
+	@NotBlank
+	private String				goalBronze;
+
+	private Money				rewardBronze;
 
 }
