@@ -134,6 +134,18 @@
 		<property name="numberStars" value="2"/>
 	</bean>
 	
+		<bean id="companyrecord05" class="acme.entities.companyrecords.Companyrecord">
+		<property name="name" value="Google"/>
+		<property name="sector" value="Internet"/>
+		<property name="ceo" value="Sundar Pichai"/>
+		<property name="description" value="This is the description of another company"/>
+		<property name="website" value="http://www.google.com"/>
+		<property name="phone" value="222333000"/>
+		<property name="email" value="example@gmail.com"/>
+		<property name="incorporated" value="true"/>
+		<property name="numberStars" value="5"/>
+	</bean>
+	
 	<!-- Investors Records -->
 		<bean id="investorsrecords01" class="acme.entities.investorsrecords.Investorsrecords">
 		<property name="name" value="Ricochili"/>
@@ -154,6 +166,12 @@
 		<property name="sector" value="Building"/>
 		<property name="statement" value="This is a bad example of a statement"/>
 		<property name="numberStars" value="0"/>
+	</bean>
+		<bean id="investorsrecords04" class="acme.entities.investorsrecords.Investorsrecords">
+		<property name="name" value="God Smith"/>
+		<property name="sector" value="Trading"/>
+		<property name="statement" value="This is a good example of a statement"/>
+		<property name="numberStars" value="5"/>
 	</bean>
 	
 	<!-- Offers -->
