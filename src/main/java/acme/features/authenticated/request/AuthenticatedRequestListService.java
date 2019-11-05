@@ -5,7 +5,6 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.stereotype.Service;
 
 import acme.entities.request.Request;
 import acme.framework.components.Model;
@@ -35,7 +34,7 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "description", "reward", "moment", "deadLine", "idRequest");
+		request.unbind(entity, model, "title", "description", "reward", "moment", "deadLine", "ticker");
 	}
 
 	@Override

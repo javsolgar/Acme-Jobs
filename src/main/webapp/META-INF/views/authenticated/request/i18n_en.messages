@@ -3,13 +3,13 @@ authenticated.request.list.label.description = Description
 authenticated.request.list.label.reward = Reward
 authenticated.request.list.label.deadline = Dead-Line
 authenticated.request.list.label.moment = Publication
-authenticated.request.list.label.idRequest = ID
+authenticated.request.list.label.ticker = Ticker
 
 authenticated.request.form.label.title = Title:
 authenticated.request.form.label.description = Description:
 authenticated.request.form.label.reward = Reward:
 authenticated.request.form.label.deadline = Dead-Line:
 authenticated.request.form.label.moment = Publication:
-authenticated.request.form.label.idRequest = Request's ID:
+authenticated.request.form.label.tikcer = Ticker:
 authenticated.request.form.label.button.return = Return
 authenticated.request.form.button.create = Create

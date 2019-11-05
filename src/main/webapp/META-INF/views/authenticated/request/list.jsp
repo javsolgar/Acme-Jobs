@@ -21,5 +21,5 @@
 	<acme:list-column code="authenticated.request.list.label.reward" path="reward" width="5%"/>	
 	<acme:list-column code="authenticated.request.list.label.deadline" path="deadLine" width="5%"/>	
 	<acme:list-column code="authenticated.request.list.label.moment" path="moment" width="5"/>	
-	<acme:list-column code="authenticated.request.list.label.idRequest" path="idRequest" width="5%"/>		
+	<acme:list-column code="authenticated.request.list.label.ticker" path="ticker" width="5%"/>		
 </acme:list>

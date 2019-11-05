@@ -1,12 +1,7 @@
 
 package acme.entities.configuration;
 
-import java.util.Collection;
-
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.Transient;
-import javax.validation.constraints.Min;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -25,11 +20,9 @@ public class Configuration extends DomainEntity {
 
 	private Double				spamThreshold;
 
-	@ElementCollection(targetClass = String.class)
-	private Collection<String>	spamWords;
+	private String				spamWords;
 
 	// Derivated Atributes ---------------------------------------------------------------------------------------------
-
 
 	/*
 	 * @NotBlank
@@ -50,13 +43,4 @@ public class Configuration extends DomainEntity {
 	 * return res;
 	 * }
 	 */
-	@Transient
-	@Min(0)
-	public Integer getMenorQue0() {
-		Integer res = -1;
-		if (this.spamThreshold != null && this.spamThreshold >= 0.0) {
-			res = new Integer(this.spamThreshold.intValue());
-		}
-		return res;
-	}
 }

@@ -42,11 +42,14 @@
     create table `challenge` (
        `id` integer not null,
         `version` integer not null,
+        `bronze_description` varchar(255),
         `deadline` datetime(6),
         `description` varchar(255),
         `goal_bronze` integer,
         `goal_gold` integer,
         `goal_silver` integer,
+        `gold_description` varchar(255),
+        `silver_description` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -67,7 +70,7 @@
         `ceo` varchar(255),
         `description` varchar(255),
         `email` varchar(255),
-        `incorporated` integer,
+        `incorporated` bit,
         `name` varchar(255),
         `number_stars` integer,
         `phone` varchar(255),
@@ -80,12 +83,8 @@
        `id` integer not null,
         `version` integer not null,
         `spam_threshold` double precision,
+        `spam_words` varchar(255),
         primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `configuration_spam_words` (
-       `configuration_id` integer not null,
-        `spam_words` varchar(255)
     ) engine=InnoDB;
 
     create table `consumer` (
@@ -122,12 +121,12 @@
         `version` integer not null,
         `deadline` datetime(6),
         `description` varchar(255),
-        `id_offer` varchar(255),
         `lower_range_amount` double precision,
         `lower_range_currency` varchar(255),
         `major_range_amount` double precision,
         `major_range_currency` varchar(255),
         `moment` datetime(6),
+        `ticker` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -146,10 +145,10 @@
         `version` integer not null,
         `dead_line` datetime(6),
         `description` varchar(255),
-        `id_request` varchar(255),
         `moment` datetime(6),
         `reward_amount` double precision,
         `reward_currency` varchar(255),
+        `ticker` varchar(255),
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
@@ -173,10 +172,10 @@
     insert into `hibernate_sequence` values ( 1 );
 
     alter table `offers` 
-       add constraint UK_705rmv7gevgntdq9bj6t4iyre unique (`id_offer`);
+       add constraint UK_7680whff1koitvyrrekdt6h8l unique (`ticker`);
 
     alter table `request` 
-       add constraint UK_dm2m2u46kh331qjjo4jsbbwcb unique (`id_request`);
+       add constraint UK_9mxq3powq8tqctclj0fbi2nih unique (`ticker`);
 
     alter table `user_account` 
        add constraint UK_castjbvpeeus0r8lbpehiu0e4 unique (`username`);
@@ -195,11 +194,6 @@
        add constraint FK_h52w0f3wjoi68b63wv9vwon57 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-
-    alter table `configuration_spam_words` 
-       add constraint `FK5lk29cpqe3960a943x8x8j4yh` 
-       foreign key (`configuration_id`) 
-       references `configuration` (`id`);
 
     alter table `consumer` 
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
