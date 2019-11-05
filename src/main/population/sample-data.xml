@@ -225,8 +225,6 @@
 		<property name="rewardBronze" value="625€"/>
 	</bean>
 	
-	
-	
 	<!--Non Comercial Banner  -->
 	<bean id="nonComercialBanner01" class="acme.entities.banner.NonComercialBanner">
 		<property name="urlPicture" value="https://static1.seekingalpha.com/images/marketing_images/numbers_words_signs/words_phrases/jobs_gear.jpeg"/>

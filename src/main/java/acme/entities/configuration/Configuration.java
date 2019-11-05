@@ -3,6 +3,10 @@ package acme.entities.configuration;
 
 import javax.persistence.Entity;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
+
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,29 +22,10 @@ public class Configuration extends DomainEntity {
 
 	//	Atributes	----------------------------------------------------------------------------------------------------
 
+	@Min((long) 0.0)
+	@Max((long) 100.0)
 	private Double				spamThreshold;
 
 	private String				spamWords;
 
-	// Derivated Atributes ---------------------------------------------------------------------------------------------
-
-	/*
-	 * @NotBlank
-	 * public String getspamWords() {
-	 * String res = "";
-	 * List<String> lista = new ArrayList<>();
-	 * lista.add("sex");
-	 * lista.add("hard core");
-	 * lista.add("viagra");
-	 * lista.add("cialis");
-	 * lista.add("nigeria");
-	 * lista.add("you've won");
-	 * lista.add("million dollar");
-	 * for (String i : lista) {
-	 * res = res.concat(i);
-	 * res = res.concat(",");
-	 * }
-	 * return res;
-	 * }
-	 */
 }
