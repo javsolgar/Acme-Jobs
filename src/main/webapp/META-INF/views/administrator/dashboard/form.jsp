@@ -16,7 +16,7 @@
 
 <!--  -->	
 
-	<h2><acme:message code="administrator.dashboard.form.title.application-statuses"/></h2>
+	<h2><acme:message code="administrator.dashboard.form.title.chartCompanys"/></h2>
 	<div><canvas id="canvas"></canvas></div>
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -70,7 +70,7 @@
 	
 	
 	</script>
-	
+	<h2><acme:message code="administrator.dashboard.form.title.chartInverstors"/></h2>
 	<div><canvas id="canvas2"></canvas></div>
 	<script type="text/javascript">
 	$(document).ready(function(){
@@ -84,7 +84,7 @@
 					{
 						data : [
 							<jstl:forEach var="item" items="${inverstorsBySector}">
-							<jstl:out value="${item}" />,
+							${item},
 							</jstl:forEach>
 							
 						]

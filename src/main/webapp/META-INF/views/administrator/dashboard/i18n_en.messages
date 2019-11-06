@@ -1,4 +1,5 @@
-administrator.dashboard.form.title.application-statuses = Aplication properties:
+administrator.dashboard.form.title.chartInverstors = Amount of inverstors by sectors:
+administrator.dashboard.form.title.chartCompanys = Amount of companys by sectors:
 administrator.dashboard.form.label.totalAnnouncement= Total of announcements:
 administrator.dashboard.form.label.totalInvestorsRecord= Total of investors records:
 administrator.dashboard.form.label.totalCompanyRecords= Total of companys records:
