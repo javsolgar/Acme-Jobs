@@ -21,6 +21,11 @@ public class Dashboard implements Serializable {
 
 	//	Atributes	----------------------------------------------------------------------------------------------------
 
+	private Integer						totalAnnouncement;
+
+	private Integer						totalInvestorsRecord;
+
+	private Integer						totalCompanyRecord;
 	/*
 	 *
 	 * private Integer standarDesviationRequest;
