@@ -32,7 +32,9 @@ master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcement.list= List of announcements
 master.menu.anonymous.announcement.form= Create Announcement
 master.menu.anonymous.companyrecord.list= List of company records
+master.menu.anonymous.topcompanyrecord.list= List of top company records
 master.menu.anonymous.investorsrecords.list= List of investors records
+master.menu.anonymous.topinvestorsrecords.list= List of top investors records
 
 
 

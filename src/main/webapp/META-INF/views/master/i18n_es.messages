@@ -32,7 +32,9 @@ master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcement.list= Lista de anuncios
 master.menu.anonymous.announcement.form= Crear anuncio
 master.menu.anonymous.investorsrecords.list= Lista de registros de inversionistas
+master.menu.anonymous.topinvestorsrecords.list= Lista de registros de los mejores inversionistas
 master.menu.anonymous.companyrecord.list = Lista de registros de compañías
+master.menu.anonymous.topcompanyrecord.list = Lista de registros de las mejores compañías
 
 
 # master.menu.authenticated ########################################################
