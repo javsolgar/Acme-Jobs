@@ -46,7 +46,7 @@ public class Request extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "([R]{1})([A-Z]{4})([-])([0-9]{5})")
+	@Pattern(regexp = "^[R][a-zA-Z]{4}[-][0-9]{5}$")
 	private String				ticker;
 
 

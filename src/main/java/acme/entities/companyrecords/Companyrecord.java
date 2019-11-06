@@ -7,6 +7,7 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.URL;
 
@@ -38,7 +39,9 @@ public class Companyrecord extends DomainEntity {
 	@URL
 	private String				website;
 
+	//[[(][0-9] {1,4}[)][\\s]]?
 	@NotBlank
+	@Pattern(regexp = "^[+][0-9]{1,3}[\\s]([(][0-9]{1,4}[)][\\s])?[0-9]{6,10}$")
 	private String				phone;
 
 	@NotBlank
