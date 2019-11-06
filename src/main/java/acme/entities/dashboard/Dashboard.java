@@ -3,8 +3,6 @@ package acme.entities.dashboard;
 
 import java.io.Serializable;
 
-import javax.persistence.Transient;
-
 import acme.features.administrator.dashboard.AdministratorDashboardRepository;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,7 +23,7 @@ public class Dashboard implements Serializable {
 
 	private Integer						totalInvestorsRecord;
 
-	private Integer						totalCompanyRecord;
+	private Integer						totalCompanyRecords;
 	/*
 	 *
 	 * private Integer standarDesviationRequest;
@@ -35,24 +33,25 @@ public class Dashboard implements Serializable {
 
 	// Derivated Atributes -------------------------------------------------------------
 
-
-	@Transient
-	public Integer getTotalAnnouncement() {
-		Integer res = this.repository.countAnnouncement();
-		return res;
-	}
-
-	@Transient
-	public Integer getTotalInvestorsRecord() {
-		Integer res = this.repository.countInvestorsRecords();
-		return res;
-	}
-
-	@Transient
-	public Integer getTotalCompanyRecord() {
-		Integer res = this.repository.countCompanyRecord();
-		return res;
-	}
+	/*
+	 * @Transient
+	 * public Integer getTotalAnnouncement() {
+	 * Integer res = this.repository.countAnnouncement();
+	 * return res;
+	 * }
+	 * 
+	 * @Transient
+	 * public Integer getTotalInvestorsRecord() {
+	 * Integer res = this.repository.countInvestorsRecords();
+	 * return res;
+	 * }
+	 * 
+	 * @Transient
+	 * public Integer getTotalCompanyRecord() {
+	 * Integer res = this.repository.countCompanyRecord();
+	 * return res;
+	 * }
+	 */
 
 	/*
 	 * @Transient

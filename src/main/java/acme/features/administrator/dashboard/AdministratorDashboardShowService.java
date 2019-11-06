@@ -33,7 +33,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalAnnouncment", "totalInvestorsRecord", "totalCompanyRecords");
+		request.unbind(entity, model, "totalAnnouncement", "totalInvestorsRecord", "totalCompanyRecords");
 
 	}
 
@@ -41,7 +41,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 	public Dashboard findOne(final Request<Dashboard> request) {
 		Dashboard result = new Dashboard();
 		result.setTotalAnnouncement(this.getTotalAnnouncement());
-		result.setTotalCompanyRecord(this.getTotalCompanyRecord());
+		result.setTotalCompanyRecords(this.getTotalCompanyRecords());
 		result.setTotalInvestorsRecord(this.getTotalInvestorsRecord());
 		return result;
 	}
@@ -56,7 +56,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		return res;
 	}
 
-	public Integer getTotalCompanyRecord() {
+	public Integer getTotalCompanyRecords() {
 		Integer res = this.repository.countCompanyRecord();
 		return res;
 	}

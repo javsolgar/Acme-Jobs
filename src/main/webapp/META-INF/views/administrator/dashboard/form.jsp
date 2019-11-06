@@ -14,7 +14,7 @@
 				datasets	:	[ 
 					{
 						data : [
-							<jstl:out value ="${totalAnnouncment}"/>,
+							<jstl:out value ="${totalAnnouncement}"/>,
 							<jstl:out value ="${totalInvestorsRecord}"/>,
 							<jstl:out value ="${totalCompanyRecords}"/>
 							
@@ -46,7 +46,7 @@
 	
 	canvas = document.getElementById("canvas");
 	context = canvas.getContext("2d");
-	mew Chart(context, {
+	new Chart(context, {
 		type	:	"bar",
 		data	:	data,
 		options	:	options
