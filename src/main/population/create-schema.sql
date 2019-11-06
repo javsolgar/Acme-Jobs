@@ -99,21 +99,6 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `dashboard` (
-       `id` integer not null,
-        `version` integer not null,
-        `maximun_offers` integer,
-        `maximun_request` integer,
-        `minimun_offers` integer,
-        `minimun_request` integer,
-        `standar_desviation_offers` integer,
-        `standar_desviation_request` integer,
-        `total_announcement` integer,
-        `total_company` integer,
-        `total_inverstors` integer,
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `investorsrecords` (
        `id` integer not null,
         `version` integer not null,
