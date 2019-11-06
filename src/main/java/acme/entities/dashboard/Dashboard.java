@@ -1,19 +1,17 @@
 
 package acme.entities.dashboard;
 
-import javax.persistence.Entity;
+import java.io.Serializable;
+
 import javax.persistence.Transient;
 
 import acme.features.administrator.dashboard.AdministratorDashboardRepository;
-import acme.framework.datatypes.Money;
-import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
 @Getter
 @Setter
-public class Dashboard extends DomainEntity {
+public class Dashboard implements Serializable {
 
 	AdministratorDashboardRepository	repository;
 
@@ -24,21 +22,8 @@ public class Dashboard extends DomainEntity {
 	//	Atributes	----------------------------------------------------------------------------------------------------
 
 	/*
-	 * private Integer totalAnnouncement;
-	 *
-	 * private Integer totalInverstors;
-	 *
-	 * private Integer totalCompany;
-	 *
-	 * private Integer minimunRequest;
-	 *
-	 * private Integer maximunRequest;
 	 *
 	 * private Integer standarDesviationRequest;
-	 *
-	 * private Integer minimunOffers;
-	 *
-	 * private Integer maximunOffers;
 	 *
 	 * private Integer standarDesviationOffers;
 	 */
@@ -64,28 +49,29 @@ public class Dashboard extends DomainEntity {
 		return res;
 	}
 
-	@Transient
-	public Money getMinRewardRequest() {
-		Money res = this.repository.getMinRewardRequest();
-		return res;
-	}
-
-	@Transient
-	public Money getMaxRewardRequest() {
-		Money res = this.repository.getMaxRewardRequest();
-		return res;
-	}
-
-	@Transient
-	public Money getMinRewardOffer() {
-		Money res = this.repository.getMinRewardOffer();
-		return res;
-	}
-
-	@Transient
-	public Money getMaxRewardOffer() {
-		Money res = this.repository.getMaxRewardOffer();
-		return res;
-	}
-
+	/*
+	 * @Transient
+	 * public Money getMinRewardRequest() {
+	 * Money res = this.repository.getMinRewardRequest();
+	 * return res;
+	 * }
+	 *
+	 * @Transient
+	 * public Money getMaxRewardRequest() {
+	 * Money res = this.repository.getMaxRewardRequest();
+	 * return res;
+	 * }
+	 *
+	 * @Transient
+	 * public Money getMinRewardOffer() {
+	 * Money res = this.repository.getMinRewardOffer();
+	 * return res;
+	 * }
+	 *
+	 * @Transient
+	 * public Money getMaxRewardOffer() {
+	 * Money res = this.repository.getMaxRewardOffer();
+	 * return res;
+	 * }
+	 */
 }
