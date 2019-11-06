@@ -18,7 +18,6 @@
 
 <tiles-definitions>
 	
-	
 	<definition name="administrator/dashboard/form" extends="master">
 		<put-attribute name="body" type="template" value="../administrator/dashboard/form.jsp" />
 	</definition>

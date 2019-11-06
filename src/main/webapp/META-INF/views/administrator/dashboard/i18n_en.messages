@@ -1,2 +1,5 @@
 administrator.dashboard.form.title.application-statuses = Aplication properties:
+administrator.dashboard.form.label.totalAnnouncement= Total of announcements:
+administrator.dashboard.form.label.totalInvestorsRecord= Total of investors records:
+administrator.dashboard.form.label.totalCompanyRecords= Total of companys records:
 administrator.configuration.form.label.button.return = Return
