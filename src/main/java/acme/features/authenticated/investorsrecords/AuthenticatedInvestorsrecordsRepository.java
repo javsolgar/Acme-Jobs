@@ -18,4 +18,7 @@ public interface AuthenticatedInvestorsrecordsRepository extends AbstractReposit
 	@Query("select a from Investorsrecords a")
 	Collection<Investorsrecords> findManyAll();
 
+	@Query("select count(*) from Investorsrecords a")
+	Integer countInvestorsRecords();
+
 }

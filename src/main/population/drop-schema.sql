@@ -39,6 +39,8 @@
 
     drop table if exists `consumer`;
 
+    drop table if exists `dashboard`;
+
     drop table if exists `investorsrecords`;
 
     drop table if exists `non_comercial_banner`;
