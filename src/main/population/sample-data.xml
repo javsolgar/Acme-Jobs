@@ -92,7 +92,7 @@
 		<property name="ceo" value="Leslie"/>
 		<property name="description" value="This is the description of a company"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="111222333"/>
+		<property name="phone" value="+34 676305600"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="true"/>
 		<property name="numberStars" value="4"/>
@@ -104,7 +104,7 @@
 		<property name="ceo" value="Jhon Doe"/>
 		<property name="description" value="This is the description of another company"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="222333444"/>
+		<property name="phone" value="+123 (1234) 123456"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="false"/>
 		<property name="numberStars" value="3"/>
@@ -116,7 +116,7 @@
 		<property name="ceo" value="Marie"/>
 		<property name="description" value="This is the description of another company"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="222333444"/>
+		<property name="phone" value="holamariola+34 1234567"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="true"/>
 		<property name="numberStars" value="5"/>
@@ -128,7 +128,7 @@
 		<property name="ceo" value="Jaiver Solis"/>
 		<property name="description" value="This is the description of another company"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="222333444"/>
+		<property name="phone" value="+4 (123) 1234567890comotequiero"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="false"/>
 		<property name="numberStars" value="2"/>
