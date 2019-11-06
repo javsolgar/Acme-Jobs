@@ -1,7 +1,9 @@
 
 package acme.features.authenticated.request;
 
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -44,8 +46,9 @@ public class AuthenticatedRequestListService implements AbstractListService<Auth
 		Collection<Request> result;
 
 		result = this.repository.findManyAll();
+		Calendar calendar = Calendar.getInstance();
+		return result.stream().filter(x -> x.getDeadLine().compareTo(calendar.getTime()) > 0).collect(Collectors.toList());
 
-		return result;
 	}
 
 }
