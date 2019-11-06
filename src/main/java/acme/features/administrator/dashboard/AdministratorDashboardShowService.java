@@ -1,6 +1,8 @@
 
 package acme.features.administrator.dashboard;
 
+import java.util.Collection;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +35,8 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "totalAnnouncement", "totalInvestorsRecord", "totalCompanyRecords");
+		request.unbind(entity, model, "totalAnnouncement", "totalInvestorsRecord", "totalCompanyRecords", "minRewardRequest", "maxRewardRequest", "minRewardOffers", "maxRewardOffers", "companysBySector", "sectorsOfCompanys", "inverstorsBySector",
+			"sectorsOfInverstors");
 
 	}
 
@@ -43,6 +46,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setTotalAnnouncement(this.getTotalAnnouncement());
 		result.setTotalCompanyRecords(this.getTotalCompanyRecords());
 		result.setTotalInvestorsRecord(this.getTotalInvestorsRecord());
+		result.setMinRewardRequest(this.getMinRewardRequest());
+		result.setMaxRewardRequest(this.getMaxRewardRequest());
+		result.setMinRewardOffers(this.getMinRewardOffer());
+		result.setMaxRewardOffers(this.getMaxRewardOffer());
+		result.setCompanysBySector(this.getCompanysBySector());
+		result.setInverstorsBySector(this.getInverstorsBySector());
+		result.setSectorsOfCompanys(this.getSectorsOfCompanys());
+		result.setSectorsOfInverstors(this.getSectorOfInverstors());
 		return result;
 	}
 
@@ -61,30 +72,44 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		return res;
 	}
 
-	/*
-	 * @Transient
-	 * public Money getMinRewardRequest() {
-	 * Money res = this.repository.getMinRewardRequest();
-	 * return res;
-	 * }
-	 *
-	 * @Transient
-	 * public Money getMaxRewardRequest() {
-	 * Money res = this.repository.getMaxRewardRequest();
-	 * return res;
-	 * }
-	 *
-	 * @Transient
-	 * public Money getMinRewardOffer() {
-	 * Money res = this.repository.getMinRewardOffer();
-	 * return res;
-	 * }
-	 *
-	 * @Transient
-	 * public Money getMaxRewardOffer() {
-	 * Money res = this.repository.getMaxRewardOffer();
-	 * return res;
-	 * }
-	 */
+	public Double getMinRewardRequest() {
+		Double res = this.repository.getMinRewardRequest();
+		return res;
+	}
+
+	public Double getMaxRewardRequest() {
+		Double res = this.repository.getMaxRewardRequest();
+		return res;
+	}
+
+	public Double getMinRewardOffer() {
+		Double res = this.repository.getMinRewardOffer();
+		return res;
+	}
+
+	public Double getMaxRewardOffer() {
+		Double res = this.repository.getMaxRewardOffer();
+		return res;
+	}
+
+	public Collection<Integer> getCompanysBySector() {
+		Collection<Integer> res = this.repository.getCompanysBySector();
+		return res;
+	}
+
+	public Collection<String> getSectorsOfCompanys() {
+		Collection<String> res = this.repository.getSectorsOfCompanys();
+		return res;
+	}
+
+	public Collection<Integer> getInverstorsBySector() {
+		Collection<Integer> res = this.repository.getInverstorsBySector();
+		return res;
+	}
+
+	public Collection<String> getSectorOfInverstors() {
+		Collection<String> res = this.repository.getSectorOfInverstors();
+		return res;
+	}
 
 }
