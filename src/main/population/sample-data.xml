@@ -73,7 +73,7 @@
 		<property name="deadLine" value="2017/07/10 12:35"/>
 		<property name="description" value="This is the description of the third request"/>
 		<property name="reward" value="1200€"/>
-		<property name="ticker" value="RABCD-00003"/>
+		<property name="ticker" value="RAbcD-00003"/>
 	</bean>
 	
 	<bean id="request04" class="acme.entities.request.Request">
@@ -116,7 +116,7 @@
 		<property name="ceo" value="Marie"/>
 		<property name="description" value="This is the description of another company"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="holamariola+34 1234567"/>
+		<property name="phone" value="+345 1234567"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="true"/>
 		<property name="numberStars" value="5"/>
@@ -128,7 +128,7 @@
 		<property name="ceo" value="Jaiver Solis"/>
 		<property name="description" value="This is the description of another company"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="+4 (123) 1234567890comotequiero"/>
+		<property name="phone" value="+4 (123) 1234567890"/>
 		<property name="email" value="example@example.com"/>
 		<property name="incorporated" value="false"/>
 		<property name="numberStars" value="2"/>
@@ -140,7 +140,7 @@
 		<property name="ceo" value="Sundar Pichai"/>
 		<property name="description" value="This is the description of another company"/>
 		<property name="website" value="http://www.google.com"/>
-		<property name="phone" value="222333000"/>
+		<property name="phone" value="+000 (0000) 0000000"/>
 		<property name="email" value="example@gmail.com"/>
 		<property name="incorporated" value="true"/>
 		<property name="numberStars" value="5"/>
