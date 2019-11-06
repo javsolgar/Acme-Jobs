@@ -30,7 +30,7 @@
 					{
 						data : [
 							<jstl:forEach var="item" items="${companysBySector}">
-							<jstl:out value="${item}" />,
+							"${item}",
 							</jstl:forEach>
 							
 						]
