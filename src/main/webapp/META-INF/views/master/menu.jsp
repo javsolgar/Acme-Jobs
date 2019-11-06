@@ -49,6 +49,7 @@
 			<acme:menu-suboption code="master.menu.administrator.announcement.list" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.configuration.list" action="/administrator/configuration/show" />
+			<acme:menu-suboption code="master.menu.administrator.dashboard.show" action="/administrator/dashboard/show" />
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
